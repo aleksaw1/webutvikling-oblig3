@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+
+<html>
+    <head>
+        <link href="css/article1.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+            <h1 class="myname">Title</h1>
+            <img class="banner" src="photo2-1.jpg" >
+        </header>
+        <nav class="mainnav">
+            <ul class="flex-container">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="article1.html">Git Hub</a></li>
+            <li><a href="article2.html">Media Type</a></li>
+            <li><a href="aricle3.html">CSS Layouts</a></li>
+                <li>
+                    <a href="" onclick="print()">Print</a>
+                </li>
+            </ul>
+        
+        </nav>
+        <main class="main-content">
+            <h2>Layout og design</h2>
+            <img class="img1" src="flexboxcss.png">
+            <article><h3>Layout og design.</h3>
+                Det finnes en rekke forskjellige metoder å designe en nettside på. 
+                Her er 4 teknikker for posisjonering av elementer i CSS.
+                <ul><li>Standard posisjon heter «static». Der vises alle elementene i den rekkefølgen de er skevet i HTML dokumentet, og alt følger venstrekanen nedover.</li>
+                <li>Relative – Det er den enkleste teknikken.  Minner litt om teknikken «static». 
+                
+                Når man forandrer egenskapene i  topp-, høyre-, bunn- og venstre til et relativt 
+                posisjonert element blir den opprinnelige posisjonen til elementene holdt av i 
+                nettsiden. Og det kan skje at elementene overlapper hverendre. Derfor egner 
+                relativ posisjonering seg for «småjusteringer».
+                <li>Fixed (låst) Med fixed posisjon kan vi velge å la et element «bli igjen» 
+                    på nettsiden når  vi f.eks scroller siden opp eller ned. Det er alltid 
+                    plassert i forhold til nettleservinduet og ikke i forhold til innholdet. 
+                    Dette kan brukes i mange scenarier som f.eks toppmenyer eller  knapper 
+                    som forblir på plass osv.</li>
+                
+                <li>Absolute. Hvis et eliment er plassert i et body tagg vil absolute 
+                fungere lik som fixed, men den vil følge med i scrollingen av siden.
+                 Den er posjonert i forhold til øvre venstre hjørne på nettsiden og 
+                 ikke øvre venstre hjørne på nettleseren slik som fixed. Man posisjonerer 
+                 alltid rundt foreldreelementet, så man kan lage tekst som dekker et bilde.</li>
+                </ul>
+                
+                Posisjonering blir mindre brukt fordi det er lett å overlappe elementer
+                 og holde styr på alt. <br>
+                 Posisjonering skalerer ikke så derfor benyttes 
+                 posisjoneringteknikken på enkelte elementer. <br>
+                <h3>Floating.</h3>
+                I floating angir vi ikke eksakte posisjoner men lar elementet «flyte»
+                 i forhold til hverendre. Det er fint å bruke floate når man vil benytte 
+                 den ledige plass til bildet i en artikkel. 
+                <h3>Flexbox.</h3>
+                Flexbox er et nytt verktøy som gjør det enkelt å lage resposiv design, 
+                 uavhengig av skjermstørrelse. En av de mest avgjørende egenskapene til flexbox
+                 er at den kan forme innholdet på en strukturert måte. Den velger riktig 
+                 størrelse for å plassere f.eks navigasjonsbar slik at plassen blir maksimalt 
+                 utnyttet , og alle elementene får lik mellomrom. 
+                Med egenskapene som flex-grow og flex-shrink kan vi få elementer til å 
+                vokse/minske i forhold til de andre elementene. Auto elementet fyller all ledig plass.
+                <h3>Grid</h3>
+                CSS Grid er det «beste» (ifølge mange) og kraftigste oppsettsystemet 
+                tilgjengelig i CSS. Det er et 2-dimensjonalt system, som betyr at det kan håndtere både kolonner og rader, i motsetning til flexbox, som i stor grad er et 1-dimensjonalt system. Flexbox og Grid fungerer veldig bra sammen. CSS kan plassere elementene i hvilken som helst rekkefølge, noe som gjør det super enkelt å omorganisere rutenettet med medieforespørsler. 
+                Skal man forandre på CSS «malen» for å imøtekomme en annen skjermbredde, 
+                forandrer man bare et par linjer i koden. De fleste browsere støtter
+                 Grid funskjonen bortsett fra Opera mini.  I Grid bruker man begegnelsen
+                  fr som betyr 1 fraction eller som 1 del når man skal lage rader og kolonner.
+        
+                </article>
+           <div class="single-line"></div>
+            
+        </main>
+        
+        <footer class="foot">
+            <div class="flex-right-container">
+                <div ><p class="myname1">Navn</p></div>
+                <div class="email">emailll</div>
+            </div>
+        </footer>
+    </body>
+</html>

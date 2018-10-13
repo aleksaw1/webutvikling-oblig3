@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+
+<html>
+    <head>
+        <link href="home-style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+       <h1 class="myname">A.W</h1> 
+        
+        </header>
+        <nav class="mainnav">
+                <button aria-expanded="false" aria-controls="menu-list"></button>
+                <span class="open">☰</span>
+                <span class="close">×</span>
+            <ul class="flex-container">
+
+            <li><img id="homepng"><a href="index.html">Home</a></li>
+            <li><a href="article1.html">Git Hub</a></li>
+            <li><a href="article2.html">Media Types</a></li>
+            <li><a href="aricle3.html">CSS Layouts</a></li>
+                <li>
+                    <a href="" onclick="print()">Print</a>
+                </li>
+            </ul>
+        
+        </nav>
+        <main class="main-content">
+                <h2>Sketch av oppgaven</h2>
+                <img class="img1" src="oblig2pic.png">
+                <img class="img1" src="oblig2pic1.png">
+        
+               <div class="single-line"></div>
+            <h2>Github</h2>
+            <img class="img1" src="githubpic.png">
+            <article>Mentitum nulla labore ingeniis sunt. Nostrud tamen occaecat officia. In 
+                excepteur est doctrina ita velit ullamco appellat sed minim senserit an 
+                efflorescere, elit laboris fidelissimae. Cernantur minim aliquip. Nam nulla 
+                minim ubi probant, qui consequat te senserit, elit sed pariatur se irure, si 
+                ipsum distinguantur a ad illum tamen ab admodum, fore appellat ubi anim aliqua, 
+                probant fugiat incurreret fabulas, nulla sed singulis se esse. Ingeniis varias 
+                aliquip ullamco, mandaremus cohaerescant ut laboris, varias ingeniis 
+                exquisitaque, iudicem minim hic excepteur efflorescere.</article>
+           <div class="single-line"></div>
+            <h2>Mediatyper </h2>
+            <img src="css_media_type.png">
+            <article><h3>Medietyper.</h3>
+                    Det finnes en rekke medietyper i CSS, som f.eks screen,
+                    print,projector,speech,braille,tty,tv,embrossed,handheld
+                     og 3d-glasss. Man kobler da de forskjellige stilarkene 
+                     til HTML documentet og nettsiden velger ut den som passer. 
+                     Noen stilark har lite etterspøsel, og blir derfor ikke benyttet.
+                     
+                    Medietypen print blir brukt for å printe ut siden. Derfor 
+                    er det viktig å lage et rent stilark med fokus på innhold, 
+                    og ikke design. 
+                    <ul> <li>Fjerne unødvendig design, meny og annonser.</li>
+                    <li>Siden bør helst være svart/hvitt.</li>
+                <li> Helst serif -font.</li>
+            <li>Større skrift, for de som ser dårlig.</li>
+        <li> Fjerne annimasjoner og video.</li>
+    <li> Helst få plass til alt på en A4 ark</li></ul>
+                    Det er også mulig å lage flere stilark uten å bruke
+                     link taggen. Det gjøres ved hjelp av @media blokker. 
+                     For å vise sidetall og sidetittel bruker man blokk @page. 
+                   <br> Mediatypen handheld skulle benyttes til å tilpasse størrelsen
+                     og designet åpå nettsiden for mobiltelefoner. Men problemet er
+                      at mobiltelefoner har forskjellige størrelser og nettbrett 
+                      regnes som en mobil-enhet. Det var ikke mulig å lage et stilaark 
+                       alle mobilenheter. 
+                       Derfor blir det
+                        nye systemet benyttet
+                         istedet. Den kalles
+                          media querries. </br>
+                </article>
+            <div class="single-line"></div>
+            <h2>CSS Layouts</h2>
+            <img src="flexboxcss.png">
+            <article>
+                <h3>Layout og design.</h3>
+Det finnes en rekke forskjellige metoder å designe en nettside på. 
+Her er 4 teknikker for posisjonering av elementer i CSS.
+<ul><li>Standard posisjon heter «static». Der vises alle elementene i den rekkefølgen de er skevet i HTML dokumentet, og alt følger venstrekanen nedover.</li>
+<li>Relative – Det er den enkleste teknikken.  Minner litt om teknikken «static». 
+
+Når man forandrer egenskapene i  topp-, høyre-, bunn- og venstre til et relativt 
+posisjonert element blir den opprinnelige posisjonen til elementene holdt av i 
+nettsiden. Og det kan skje at elementene overlapper hverendre. Derfor egner 
+relativ posisjonering seg for «småjusteringer».
+<li>Fixed (låst) Med fixed posisjon kan vi velge å la et element «bli igjen» 
+    på nettsiden når  vi f.eks scroller siden opp eller ned. Det er alltid 
+    plassert i forhold til nettleservinduet og ikke i forhold til innholdet. 
+    Dette kan brukes i mange scenarier som f.eks toppmenyer eller  knapper 
+    som forblir på plass osv.</li>
+
+<li>Absolute. Hvis et eliment er plassert i et body tagg vil absolute 
+fungere lik som fixed, men den vil følge med i scrollingen av siden.
+ Den er posjonert i forhold til øvre venstre hjørne på nettsiden og 
+ ikke øvre venstre hjørne på nettleseren slik som fixed. Man posisjonerer 
+ alltid rundt foreldreelementet, så man kan lage tekst som dekker et bilde.</li>
+</ul>
+
+Posisjonering blir mindre brukt fordi det er lett å overlappe elementer
+ og holde styr på alt. <br>
+ Posisjonering skalerer ikke så derfor benyttes 
+ posisjoneringteknikken på enkelte elementer. <br>
+<h3>Floating.</h3>
+I floating angir vi ikke eksakte posisjoner men lar elementet «flyte»
+ i forhold til hverendre. Det er fint å bruke floate når man vil benytte 
+ den ledige plass til bildet i en artikkel. 
+<h3>Flexbox.</h3>
+Flexbox er et nytt verktøy som gjør det enkelt å lage resposiv design, 
+uavhengig av skjermstørrelse. En av de mest avgjørende egenskapene til flexbox
+ er at den kan forme innholdet på en strukturert måte. Den velger riktig 
+ størrelse for å plassere f.eks navigasjonsbar slik at plassen blir maksimalt 
+ utnyttet , og alle elementene får lik mellomrom. 
+Med egenskapene som flex-grow og flex-shrink kan vi få elementer til å 
+vokse/minske i forhold til de andre elementene. Auto elementet fyller all ledig plass.
+<h3>Grid</h3>
+CSS Grid er det «beste» (ifølge mange) og kraftigste oppsettsystemet 
+tilgjengelig i CSS. Det er et 2-dimensjonalt system, som betyr at det kan håndtere både kolonner og rader, i motsetning til flexbox, som i stor grad er et 1-dimensjonalt system. Flexbox og Grid fungerer veldig bra sammen. CSS kan plassere elementene i hvilken som helst rekkefølge, noe som gjør det super enkelt å omorganisere rutenettet med medieforespørsler. 
+Skal man forandre på CSS «malen» for å imøtekomme en annen skjermbredde, 
+forandrer man bare et par linjer i koden. De fleste browsere støtter
+ Grid funskjonen bortsett fra Opera mini.  I Grid bruker man begegnelsen
+  fr som betyr 1 fraction eller som 1 del når man skal lage rader og kolonner.
+
+
+
+
+            </article>
+            <hr>
+        </main>
+        <aside class="right-aside">
+            <div class="vid-flex">
+                    <video width="320" height="240" controls>
+                    <source src="video.mp4" type="video/mp4">
+                </video>
+                 
+                      <p id="p">Trykk her for å lese mer om GitHub</p>
+               <div id="button"<input type="button" value="Github"
+                 onclick="window.location.href='https://www.google.co.in/search?hl=en&source=hp&ei=f8q0W-qzIsHdvASitom4BA&q=github&oq=github&gs_l=psy-ab.3..0l5j0i131k1j0l4.206.4827.0.5150.6.6.0.0.0.0.163.688.1j5.6.0....0...1c.1.64.psy-ab..0.6.684...0i7i10i30k1j0i7i30k1.0.JVTBLg_-7JI';" 
+                class="gitlink">
+                <img src="googleicon.png" alt="puchbutton>
+            </div>
+            <div class="mylinks">
+                <ul class="li"><li><a href="https://designmodo.com/responsive-design-examples/">Responsiv design - designmodo.com  </a></li>
+                <li><a href="https://freshsparks.com/why-responsive-design-is-important/">Responsiv design - freshsparks.com</a></li>
+                <li><a href="https://www.interaction-design.org/literature/article/responsive-design-let-the-device-do-the-work">Responsiv Design - interaction-design.org </a></li>
+                <li><a href="https://www.mercurytide.co.uk/blog/article/looking-future-responsive-design/">Responsiv design - mercurytide.co.uk </a></li>
+                <li><a href="https://www.sciencedirect.com/science/article/pii/S1877042813048829">Responsiv design - sciencedirect.com</a></li></ul>
+            </div>
+        </aside>
+        <footer class="foot">
+            <div class="flex-right-container">
+                <div ><p class="myname1">Navn</p></div>
+                <div class="email"><p>
+                   Send email til meg:
+                    <a href="mailto:aleksaw@hiof.no"><img src="mail.png"></a>
+                    </p></div>
+            </div>
+        </footer>
+
+
+    
+    </body>
+</html>
